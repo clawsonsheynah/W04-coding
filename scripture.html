@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripture</title>
+    <script>
+    function applyScripture() {
+        let name = document.getElementById('nameInputBox').value;
+    let scripture = "Knowing this, that the trying of your faith worketh patience" + name +
+                    "Whosoever shall put their trust in God shall be supported in their trials, and their troubles, and their afflictions, and shall be lifted up at the last day.";
+    document.getElementById('outputDiv').innerHTML = scripture;   
+    }   
+    </script>
+    </head>
+    
+<body>
+    Please enter your name: <input type="text" id="nameInputBox">    
+    <button type="button" onclick="applyScripture()">Verse</button>
+    <div id="outputDiv"></div>
+    </body>      
+    </html>
